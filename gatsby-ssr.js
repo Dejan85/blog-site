@@ -1,6 +1,6 @@
-import React from "react"
-import Theme from "./src/themes/theme"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import React from "react";
+import Theme from "./src/themes/theme";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     *{
@@ -14,11 +14,11 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         background-color: ${props => props.theme.colors.light1};
     }
-`
+`;
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={Theme}>
     <GlobalStyles />
     {element}
   </ThemeProvider>
-)
+);
