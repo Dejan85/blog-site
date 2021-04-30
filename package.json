@@ -20,6 +20,7 @@
     "gatsby": "^3.4.0",
     "gatsby-plugin-mdx": "^2.4.0",
     "gatsby-plugin-sharp": "^3.4.0",
+    "gatsby-remark-images": "^5.1.0",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "react": "^17.0.1",
