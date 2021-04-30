@@ -16,4 +16,18 @@ exports.createPages = async ({ actions, graphql }) => {
 
   // create paginated pages for posts
   const postPerPage = 3;
+  const numPages = Math.ceil(data.allMdx.edges.length / postPerPage);
+
+  Array.from({ length: numPages }).forEach((_, i) =>
+    actions.createPages({
+      path: i === 0 ? `/` : `/${i + 1}`,
+      component: require.resolve("./src/templates/allPost.js"),
+      context: {
+        limit: postPerPage,
+        skip: i * postPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  );
 };
