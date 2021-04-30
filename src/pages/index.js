@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "../components";
 
-const Index = () => {
-  return <div>hello world</div>;
+const IndexPage = () => {
+  return (
+    <Container>
+      <h1>hello world</h1>
+    </Container>
+  );
 };
 
-export default Index;
+export default IndexPage;
