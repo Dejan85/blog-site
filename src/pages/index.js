@@ -1,5 +1,7 @@
 import React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Index = () => {
+  return <div>hello world</div>
 }
+
+export default Index

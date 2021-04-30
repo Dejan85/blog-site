@@ -7,7 +7,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md, mdx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^3.4.0",
+    "gatsby-source-filesystem": "^3.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
